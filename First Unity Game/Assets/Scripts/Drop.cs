@@ -10,7 +10,7 @@ public class Drop : MonoBehaviour
     void Start()
     {
         new_item = GetComponent<Rigidbody2D>();
-        new_item.AddForce(transform.right * 140);
+        new_item.AddForce(transform.right * 200);
     }
 
     // Update is called once per frame

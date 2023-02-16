@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Out : MonoBehaviour
 {
+    public GameObject[] items;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,12 +19,9 @@ public class Out : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        print("collision with truck!");
-
         if (col.gameObject.tag == "Respawn")
         {
             GameManager.instance.IncScore();
-            Destroy(col.gameObject);
         }
     }
 }
